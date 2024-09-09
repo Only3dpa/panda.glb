@@ -1,23 +1,10 @@
 <!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAPRIKA 3D AR-Ansicht</title>
+<html>
+  <head>
+    <title>PAPRIKA 3D Ansicht</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <style>
-        model-viewer {
-            width: 100%;
-            height: 600px;
-        }
-    </style>
-</head>
-<body>
-    <model-viewer src="PAPRIKA_3D_SCAN.glb" 
-                  alt="3D Paprika Modell" 
-                  auto-rotate 
-                  camera-controls 
-                  ar>
-    </model-viewer>
-</body>
+  </head>
+  <body>
+    <model-viewer src="PAPRIKA_3D_SCAN.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate></model-viewer>
+  </body>
 </html>
